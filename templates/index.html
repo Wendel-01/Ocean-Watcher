@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +7,9 @@
     <link rel="stylesheet" href="/static/style.css">
     <title>Ocean Watcher</title>
 </head>
-
 <body>
-
-
     <nav class="nav-bar">
-        <img src="/static/segunda.png" alt="logo" style="width: 100px; align-items: end;">
+        <img src="/static/segunda.png" alt="logo" style="width: 100px; align-items: end;" >
         <ul class="nav-menu">
             <a href="#sobre">
                 <li>Sobre</li>
@@ -21,15 +17,15 @@
             <a href="#impacto">
                 <li>Impacto Ambiental</li>
             </a>
+            <a href="#chartjs">
+                <li>Gráficos</li>
+            </a>
             <a href="#apoie-causa">
                 <li>Apoiadores</li>
             </a>
-            <a href="#">
-                <li>Gráficos</li>
-            </a>
         </ul>
     </nav>
-    <hr class="hr">
+
     <section class="container-sobre" id="sobre">
         <section class="sobre-nos">
             <h2>Sobre nós</h2>
@@ -57,9 +53,8 @@
 
         </section>
 
-
     </section>
-    <div class="container-grafico">
+    <div class="container-grafico" id="chartjs">
         <div class="grafico">
             <canvas id="myChart"></canvas>
         </div>
@@ -68,7 +63,6 @@
           <div class="container-card">
             <img src="/static/logo-sea 1.png" alt="logo-sea" class="logo-apoiadores" style="cursor: pointer;" id="clicar-logo">
             
-
     </div>
         <section class="apoie">
             <h2 id="titulo">Apoie as ONGs</h2>
@@ -80,13 +74,9 @@
         </section>
     </section>
 
-
     <footer>
         <p>© 2025 Grupo Vida Marinha</p>
     </footer>
-
-
-
 
     <script src="script.js"></script>
 </body>

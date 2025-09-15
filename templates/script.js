@@ -10,7 +10,8 @@ new Chart(Grhapy, {
             borderWidth: 1,
             backgroundColor: "green",
             hoverBackgroundColor: "red",
-        }]
+        }
+    ]
     },
     options: {
         scales: {
@@ -25,7 +26,6 @@ new Chart(Grhapy, {
 // Codido para fazer o menu e aparecer de acordo com que passa o mouse por cima.
 const nav = document.querySelector(".nav-bar");
 const tophover = document.createElement("div");
-
 tophover.style.position = "fixed";
 tophover.style.top = "0";
 tophover.style.left = "0";
@@ -47,7 +47,6 @@ window.addEventListener("scroll", () => {
     }
 
     lastScroll = currentScroll;
-
 });
 
 tophover.addEventListener("mouseenter", () => {
@@ -74,7 +73,9 @@ Com o seu apoio, elas ganham força para combater a poluição e defender a biod
 A união de pequenas ações pode gerar grandes transformações.
 Juntos, podemos garantir que as futuras gerações herdem um oceano mais limpo e saudável.`;
 
-let textoSea = "Shepherd é uma marca/empresa que se destaca por seu compromisso com qualidade e inovação. O nome “Shepherd” (que significa “pastor” em inglês) simboliza liderança, cuidado e orientação, refletindo a missão de guiar seus clientes ou usuários com confiança e segurança.";
+let textoSea = `Shepherd é uma marca/empresa que se destaca por seu compromisso com qualidade e inovação. 
+O nome “Shepherd” (que significa “pastor” em inglês) simboliza liderança, cuidado e orientação, 
+refletindo a missão de guiar seus clientes ou usuários com confiança e segurança.`;
 
 let tituloOriginal1 = "Apoie as ONGs"
 let tituloSea = "Sea Shepherd Brasil"
@@ -87,7 +88,7 @@ function ChamarTexto() {
         tituloOriginal.textContent = tituloOriginal1
         mostrandoSea = false;
     } else {
-        original.textContent = textoSea; // aqui usamos 'original', não 'textooriginal'
+        original.textContent = textoSea; 
         tituloOriginal.textContent = tituloSea;
         mostrandoSea = true;
     }
